@@ -1,0 +1,20 @@
+@import '../../globals.scss';
+
+.BackButton {
+    width: 100%;
+    max-width: 320px;
+    padding: 1em 0em;
+    margin: auto 0;
+    font-size: 1.2em!important;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: $md-size) {
+    .BackButton {
+        font-size: 1.5em!important;
+    }
+}

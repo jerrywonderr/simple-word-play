@@ -1,0 +1,64 @@
+@import '../../globals.scss';
+
+.Card {
+    width: 10em;
+    height: 10em !important;
+    margin: 0.5em;
+    position: relative;
+}
+
+.CardBody {
+    position: inherit;
+    display: grid;
+    place-content: center;
+    font-size: 5em;
+}
+
+.DeleteIcon {
+    width: 0.8em;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(30%, -30%);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.DeleteIcon:hover {
+    cursor: pointer;
+    transform: unset;
+    transform: translate(30%, -30%) scale(120%);
+    transition: all 50ms ease-in;
+}
+
+.DeleteButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    // transform: translateX(-100%);
+}
+
+@media (max-width: $md-size) {
+    .Card {
+        width: 25vw;
+        height: 25vw !important;
+        // margin: 0.5em;
+    }
+
+    .CardBody {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: $md-size) {
+    .Card {
+        width: 8em;
+        height: 8em !important;
+        // margin: 0.5em;
+    }
+
+    .CardBody {
+        font-size: 3em;
+    }
+}

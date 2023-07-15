@@ -1,0 +1,36 @@
+@import '../../globals.scss';
+
+.FormField {
+    font-size: 1.8em!important;
+}
+
+.SubmitButton {
+    margin: 0.5em 0em;
+    width: 100%;
+    font-size: 1.8em!important;
+}
+
+.Row {
+    padding: 3em 0em;
+    display: flex;
+    place-content: center;
+}
+
+@media (min-width: $md-size) and (max-width: $lg-size) {
+    .Row {
+        padding: 5em 0em;
+    }
+    
+}
+
+@media (min-width: $lg-size) {
+    .Row {
+        height: 60vh;
+        padding: unset;
+    }
+    
+    .FormField {
+        font-size: 2.5rem;
+    }
+    
+}
